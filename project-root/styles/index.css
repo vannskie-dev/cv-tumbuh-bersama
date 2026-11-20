@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    background-color: #DAD7CD;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: #344E41;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #344E41;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #588157;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 720px;
+    color: #DAD7CD;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 28px;
+    color: #DAD7CD;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #588157;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #588157;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #3A5A40;
+    border-color: #3A5A40;
+}
+
+.hero-btn-outline {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn-outline:hover {
+    background-color: #DAD7CD;
+    color: #344E41;
+}
