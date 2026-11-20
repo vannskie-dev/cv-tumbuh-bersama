@@ -18,7 +18,7 @@ main {
     text-align: center;
 }
 .gallery h1 {
-    color: #A3B18A;
+    color: #DAD7CD;
     margin-bottom: 30px;
 }
 .gallery-grid {
@@ -28,8 +28,8 @@ main {
 }
 .gallery-card {
     margin: 0;
-    background-color: #141c18;
-    border: 1px solid #3A5A40;
+    background-color: #000000;
+    border: 1px solid #344E41;
     border-radius: 10px;
     overflow: hidden;
 }
