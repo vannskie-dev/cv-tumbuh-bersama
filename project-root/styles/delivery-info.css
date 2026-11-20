@@ -123,7 +123,6 @@ body {
 .introduction h2 {
     font-size: 30px;
     margin-bottom: 12px;
-    color: #f2f0e9;
 }
 
 .introduction p {
@@ -133,7 +132,7 @@ body {
     font-size: 15px;
 }
 
-/* SHIPPING CARDS */
+/* SHIPPING GRID */
 .shipping-grid {
     max-width: 1050px;
     margin: 0 auto;
@@ -144,10 +143,10 @@ body {
 }
 
 .shipping-card {
+    padding: 25px 20px;
     background: #000000;
     border: 1px solid #344E41;
     border-radius: 10px;
-    padding: 25px 20px;
     transition: 0.3s;
 }
 
@@ -157,14 +156,20 @@ body {
 }
 
 .shipping-number {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    background: #344E41;
     color: #A3B18A;
-    font-size: 27px;
+    border-radius: 50%;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
 .shipping-card h3 {
-    color: #f2f0e9;
     font-size: 19px;
     margin-bottom: 10px;
 }
@@ -176,31 +181,29 @@ body {
 
 /* DELIVERY DETAILS */
 .delivery-details {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 20px 75px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 25px 75px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 45px;
     align-items: center;
+    gap: 40px;
 }
 
 .details-content h2 {
-    color: #f2f0e9;
     font-size: 30px;
     margin-bottom: 25px;
+    color: #A3B18A;
 }
 
 .detail-item {
-    margin-bottom: 22px;
-    padding-left: 17px;
-    border-left: 3px solid #588157;
+    padding: 15px 0;
+    border-bottom: 1px solid #344E41;
 }
 
 .detail-item h3 {
-    color: #A3B18A;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 17px;
+    margin-bottom: 7px;
 }
 
 .detail-item p {
@@ -210,10 +213,55 @@ body {
 
 .delivery-image img {
     width: 100%;
-    height: 440px;
+    height: 420px;
     object-fit: cover;
     border-radius: 10px;
-    display: block;
+    border: 1px solid #344E41;
+}
+
+/* FAQ */
+.faq-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px 75px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 10px;
+    color: #A3B18A;
+}
+
+.faq-description {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.faq-item {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #111111;
+    border: 1px solid #344E41;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.faq-item:hover {
+    border-color: #A3B18A;
+}
+
+.faq-item h3 {
+    color: #f2f0e9;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    color: #cccccc;
+    font-size: 14px;
 }
 
 /* REMINDER */
@@ -245,14 +293,30 @@ footer {
     font-size: 13px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 950px) {
-    .shipping-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* BACK TO TOP */
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 12px 18px;
+    background: #588157;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #A3B18A;
+    transition: 0.3s;
+    z-index: 1000;
 }
 
-@media (max-width: 700px) {
+.back-to-top:hover {
+    background: #3A5A40;
+    transform: translateY(-4px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -261,7 +325,10 @@ footer {
     .navbar nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 14px;
+    }
+
+    .shipping-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .delivery-details {
@@ -269,7 +336,7 @@ footer {
     }
 
     .delivery-image img {
-        height: 300px;
+        height: 350px;
     }
 }
 
@@ -287,8 +354,22 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .introduction h2,
-    .details-content h2 {
+    .introduction h2 {
         font-size: 25px;
+    }
+
+    .details-content h2,
+    .faq-section h2 {
+        font-size: 25px;
+    }
+
+    .delivery-image img {
+        height: 260px;
+    }
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        padding: 10px 14px;
     }
 }
