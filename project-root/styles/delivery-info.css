@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 20px;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     background: #DAD7CD;
 }
 
@@ -35,6 +37,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .brand-icon {
@@ -46,19 +49,26 @@ body {
 .navbar nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .navbar nav a {
     color: #344E41;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
+    padding: 9px 12px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
-.navbar nav a:hover {
-    color: #588157;
+.navbar nav a:hover,
+.navbar nav a:focus-visible {
+    color: #ffffff;
+    background: #588157;
+    outline: none;
 }
 
 /* HERO */
@@ -315,16 +325,17 @@ footer {
     transform: translateY(-4px);
 }
 
-/* RESPONSIVE */
+/* TABLET */
 @media (max-width: 900px) {
     .navbar {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
+        padding: 18px 20px;
     }
 
     .navbar nav {
-        flex-wrap: wrap;
         justify-content: center;
+        gap: 5px;
     }
 
     .shipping-grid {
@@ -340,7 +351,34 @@ footer {
     }
 }
 
+/* MOBILE */
 @media (max-width: 550px) {
+    .navbar {
+        padding: 16px 12px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .brand-icon {
+        font-size: 21px;
+    }
+
+    .navbar nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .navbar nav a {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px 4px;
+        background: rgba(52, 78, 65, 0.08);
+    }
+
     .hero {
         min-height: 350px;
         padding: 55px 20px;
@@ -348,6 +386,10 @@ footer {
 
     .hero h1 {
         font-size: 32px;
+    }
+
+    .hero-content p:not(.eyebrow) {
+        font-size: 15px;
     }
 
     .shipping-grid {
@@ -363,13 +405,41 @@ footer {
         font-size: 25px;
     }
 
+    .delivery-details {
+        padding: 20px 18px 55px;
+    }
+
     .delivery-image img {
         height: 260px;
+    }
+
+    .faq-section {
+        padding: 45px 15px 55px;
     }
 
     .back-to-top {
         right: 15px;
         bottom: 15px;
         padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .reminder {
+        padding: 45px 18px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 360px) {
+    .navbar nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .shipping-card {
+        padding: 20px 16px;
     }
 }
