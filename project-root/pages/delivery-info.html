@@ -6,7 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informasi Pengiriman - CV Tumbuh Bersama</title>
     <link rel="stylesheet" href="../styles/delivery-info.css">
+
+    <style>
+        .faq-item {
+            cursor: pointer;
+        }
+
+        .faq-item summary {
+            font-weight: 600;
+            color: #344E41;
+            padding: 18px 20px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 24px;
+            color: #588157;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item[open] summary::after {
+            content: "−";
+        }
+
+        .faq-item p {
+            padding: 0 20px 18px;
+            margin: 0;
+        }
+
+        .faq-item summary:hover {
+            color: #588157;
+        }
+
+        .faq-item summary:focus-visible {
+            outline: 2px solid #588157;
+            outline-offset: 3px;
+        }
+    </style>
 </head>
+
 <body id="top">
 
     <header class="navbar">
@@ -138,6 +185,7 @@
                 <img
                     src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=1000"
                     alt="Tanaman hias dalam pot"
+                    loading="lazy"
                 >
             </div>
         </section>
@@ -145,42 +193,41 @@
         <section class="faq-section">
             <h2>Pertanyaan yang Sering Diajukan</h2>
             <p class="faq-description">
-                Berikut jawaban dari beberapa pertanyaan
-                pelanggan mengenai pengiriman tanaman.
+                Klik pertanyaan berikut untuk melihat jawabannya.
             </p>
 
-            <div class="faq-item">
-                <h3>Apakah tanaman aman dikirim?</h3>
+            <details class="faq-item">
+                <summary>Apakah tanaman aman dikirim?</summary>
                 <p>
                     Tanaman dikemas menggunakan bahan pelindung
                     untuk membantu menjaga kondisinya selama perjalanan.
                 </p>
-            </div>
+            </details>
 
-            <div class="faq-item">
-                <h3>Bagaimana jika tanaman rusak saat diterima?</h3>
+            <details class="faq-item">
+                <summary>Bagaimana jika tanaman rusak saat diterima?</summary>
                 <p>
                     Dokumentasikan kondisi paket dan tanaman
                     setelah diterima, lalu hubungi layanan pelanggan.
                 </p>
-            </div>
+            </details>
 
-            <div class="faq-item">
-                <h3>Apakah bisa mengirim ke luar kota?</h3>
+            <details class="faq-item">
+                <summary>Apakah bisa mengirim ke luar kota?</summary>
                 <p>
                     Pengiriman dapat disesuaikan dengan jangkauan
                     layanan jasa pengiriman yang tersedia.
                 </p>
-            </div>
+            </details>
 
-            <div class="faq-item">
-                <h3>Bagaimana cara mengetahui biaya pengiriman?</h3>
+            <details class="faq-item">
+                <summary>Bagaimana cara mengetahui biaya pengiriman?</summary>
                 <p>
                     Biaya pengiriman dapat diketahui berdasarkan
                     alamat tujuan, berat paket, dan layanan
                     pengiriman yang digunakan.
                 </p>
-            </div>
+            </details>
         </section>
 
         <section class="reminder">
