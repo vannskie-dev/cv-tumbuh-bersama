@@ -45,3 +45,21 @@ main {
     font-size: 15px;
     font-weight: 600;
 }
+.gallery-card {
+    transition: transform 0.3s ease;
+}
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+footer {
+    background-color: #344E41;
+    color: #DAD7CD;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer p {
+    margin: 0;
+}
