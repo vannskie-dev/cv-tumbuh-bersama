@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="../styles/delivery-info.css">
 
     <style>
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 16px;
+            z-index: 1000;
+            padding: 12px 18px;
+            background: #344E41;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .skip-link:focus {
+            top: 16px;
+            outline: 3px solid #A3B18A;
+            outline-offset: 3px;
+        }
+
         .faq-item {
             cursor: pointer;
         }
@@ -56,13 +74,17 @@
 
 <body id="top">
 
+    <a href="#main-content" class="skip-link">
+        Lewati navigasi, menuju konten utama
+    </a>
+
     <header class="navbar">
         <a href="../index.html" class="brand">
             <span class="brand-icon">TB</span>
             <span>CV Tumbuh Bersama</span>
         </a>
 
-        <nav>
+        <nav aria-label="Navigasi utama">
             <a href="../index.html">Beranda</a>
             <a href="about.html">Tentang Kami</a>
             <a href="products.html">Produk</a>
@@ -72,7 +94,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
 
         <section class="hero">
             <div class="hero-content">
@@ -97,7 +119,7 @@
             </p>
         </section>
 
-        <section class="shipping-grid">
+        <section class="shipping-grid" aria-label="Tahapan pengiriman">
 
             <article class="shipping-card">
                 <div class="shipping-number">01</div>
@@ -184,14 +206,14 @@
             <div class="delivery-image">
                 <img
                     src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=1000"
-                    alt="Tanaman hias dalam pot"
+                    alt="Tanaman hias dalam pot yang siap dirawat"
                     loading="lazy"
                 >
             </div>
         </section>
 
-        <section class="faq-section">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Pertanyaan yang Sering Diajukan</h2>
             <p class="faq-description">
                 Klik pertanyaan berikut untuk melihat jawabannya.
             </p>
