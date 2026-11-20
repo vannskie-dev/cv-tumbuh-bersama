@@ -242,3 +242,24 @@ footer {
         font-size: 25px;
     }
 }
+/* BACK TO TOP */
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 12px 18px;
+    background: #588157;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #A3B18A;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background: #3A5A40;
+    transform: translateY(-4px);
+}
