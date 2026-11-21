@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Pengiriman - CV Tumbuh Bersama</title>
+    <link rel="stylesheet" href="../styles/delivery-info.css">
+
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 16px;
+            z-index: 1000;
+            padding: 12px 18px;
+            background: #344E41;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .skip-link:focus {
+            top: 16px;
+            outline: 3px solid #A3B18A;
+            outline-offset: 3px;
+        }
+
+        .faq-item {
+            cursor: pointer;
+        }
+
+        .faq-item summary {
+            font-weight: 600;
+            color: #344E41;
+            padding: 18px 20px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 24px;
+            color: #588157;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item[open] summary::after {
+            content: "−";
+        }
+
+        .faq-item p {
+            padding: 0 20px 18px;
+            margin: 0;
+        }
+
+        .faq-item summary:hover {
+            color: #588157;
+        }
+
+        .faq-item summary:focus-visible {
+            outline: 2px solid #588157;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <a href="#main-content" class="skip-link">
+        Lewati navigasi, menuju konten utama
+    </a>
+
+    <header class="navbar">
+        <a href="../index.html" class="brand">
+            <span class="brand-icon">TB</span>
+            <span>CV Tumbuh Bersama</span>
+        </a>
+
+        <nav aria-label="Navigasi utama">
+            <a href="../index.html">Beranda</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="products.html">Produk</a>
+            <a href="gallery.html">Galeri</a>
+            <a href="prices.html">Harga</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">CV TUMBUH BERSAMA</p>
+                <h1>Informasi Pengiriman</h1>
+                <p>
+                    Informasi mengenai proses pemesanan,
+                    pengemasan, dan pengiriman tanaman
+                    hingga sampai ke tangan pelanggan.
+                </p>
+                <a href="#delivery-guide" class="main-button">
+                    Lihat Informasi
+                </a>
+            </div>
+        </section>
+
+        <section class="introduction" id="delivery-guide">
+            <h2>Proses Pengiriman</h2>
+            <p>
+                Kami memperhatikan setiap tahapan pengiriman
+                agar tanaman dapat sampai dengan kondisi baik.
+            </p>
+        </section>
+
+        <section class="shipping-grid" aria-label="Tahapan pengiriman">
+
+            <article class="shipping-card">
+                <div class="shipping-number">01</div>
+                <h3>Pemesanan</h3>
+                <p>
+                    Pelanggan memilih tanaman yang diinginkan
+                    dan mengisi informasi alamat pengiriman
+                    dengan lengkap dan benar.
+                </p>
+            </article>
+
+            <article class="shipping-card">
+                <div class="shipping-number">02</div>
+                <h3>Pengemasan</h3>
+                <p>
+                    Tanaman diperiksa dan dikemas menggunakan
+                    bahan pelindung agar tidak mudah rusak
+                    selama perjalanan.
+                </p>
+            </article>
+
+            <article class="shipping-card">
+                <div class="shipping-number">03</div>
+                <h3>Pengiriman</h3>
+                <p>
+                    Pesanan diserahkan kepada jasa pengiriman
+                    sesuai dengan layanan dan lokasi tujuan
+                    pelanggan.
+                </p>
+            </article>
+
+            <article class="shipping-card">
+                <div class="shipping-number">04</div>
+                <h3>Penerimaan</h3>
+                <p>
+                    Pelanggan menerima pesanan dan disarankan
+                    memeriksa kondisi tanaman setelah paket
+                    sampai.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="delivery-details">
+            <div class="details-content">
+                <h2>Ketentuan Pengiriman</h2>
+
+                <div class="detail-item">
+                    <h3>Alamat Pengiriman</h3>
+                    <p>
+                        Pastikan alamat, nomor telepon,
+                        dan kode pos ditulis dengan benar
+                        untuk menghindari kesalahan pengiriman.
+                    </p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Waktu Pengiriman</h3>
+                    <p>
+                        Lama pengiriman bergantung pada lokasi
+                        tujuan dan layanan jasa pengiriman
+                        yang digunakan.
+                    </p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Kondisi Tanaman</h3>
+                    <p>
+                        Segera buka paket setelah diterima
+                        dan periksa kondisi tanaman.
+                    </p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Biaya Pengiriman</h3>
+                    <p>
+                        Biaya pengiriman menyesuaikan jarak,
+                        berat paket, dan ketentuan jasa
+                        pengiriman.
+                    </p>
+                </div>
+            </div>
+
+            <div class="delivery-image">
+                <img
+                    src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=1000"
+                    alt="Tanaman hias dalam pot yang siap dirawat"
+                    loading="lazy"
+                >
+            </div>
+        </section>
+
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Pertanyaan yang Sering Diajukan</h2>
+            <p class="faq-description">
+                Klik pertanyaan berikut untuk melihat jawabannya.
+            </p>
+
+            <details class="faq-item">
+                <summary>Apakah tanaman aman dikirim?</summary>
+                <p>
+                    Tanaman dikemas menggunakan bahan pelindung
+                    untuk membantu menjaga kondisinya selama perjalanan.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Bagaimana jika tanaman rusak saat diterima?</summary>
+                <p>
+                    Dokumentasikan kondisi paket dan tanaman
+                    setelah diterima, lalu hubungi layanan pelanggan.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Apakah bisa mengirim ke luar kota?</summary>
+                <p>
+                    Pengiriman dapat disesuaikan dengan jangkauan
+                    layanan jasa pengiriman yang tersedia.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Bagaimana cara mengetahui biaya pengiriman?</summary>
+                <p>
+                    Biaya pengiriman dapat diketahui berdasarkan
+                    alamat tujuan, berat paket, dan layanan
+                    pengiriman yang digunakan.
+                </p>
+            </details>
+        </section>
+
+        <section class="reminder">
+            <h2>Informasi untuk Pelanggan</h2>
+            <p>
+                Periksa kembali kondisi tanaman setelah paket
+                diterima. Berikan perawatan yang sesuai agar
+                tanaman dapat tumbuh dengan baik.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CV Tumbuh Bersama. All Rights Reserved.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Kembali ke atas">
+        Kembali ke Atas
+    </a>
+
+</body>
+</html>
