@@ -1,0 +1,132 @@
+.pricing-section {
+  background-color: #344E41;
+  min-height: 100vh;
+  padding: 130px 20px 80px ;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.pricing-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.pricing-card {
+  background-color: #3a5a4048;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pricing-card.featured {
+  border: 2px solid #4e7351;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: #4e7351;
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.pricing-card-header {
+  border-bottom: 1px solid #262626;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.plan-name {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.plan-desc {
+  margin: 0 0 15px;
+  font-size: 0.85rem;
+  color: #a0a0a0;
+}
+
+.plan-price {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.plan-price span {
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: #a0a0a0;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+  flex-grow: 1;
+}
+
+.plan-features li {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.plan-features li::before {
+  content: "✓ ";
+  color: #6ca370;
+}
+
+.plan-btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #242424;
+  font-weight: bold;
+}
+
+.plan-btn.primary {
+  background-color: #4e7351;
+}
+
+.plan-btn:hover {
+  background-color: #3a4f3c;
+}
+
+.plan-btn.primary:hover {
+  background-color: #3a4f3c;
+}
+
+.plan-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 115, 81, 0.5);
+}
